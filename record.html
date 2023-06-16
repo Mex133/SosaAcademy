@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Запись</title>
+    
+    
+    <link rel="stylesheet" href="record.css">
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+    (function(){
+        emailjs.init("jjcEyY9hah4U2aWJZ");
+    })();
+</script>
+<script src="record.js"></script>
+</head>
+<body>
+    
+    <audio autoplay loop="loop" controls style="position: fixed; bottom: 0px; right: 0px; z-index: 10; display: none;">
+        <source src="audio/Platina_-_GoblinFM_(musmore.com).mp3">
+    </audio>
+    <header>
+        <div class="header_content">
+            <a href="main.html"><h1 class="Header_h1">sosa ac<sub>4</sub>d3my</h1></a>          
+            <div class="number_container">
+                <ul class="menu_list">
+                    <li><a href="courses.html">Курсы</a></li>
+                    <li><a href="contact.html">Контакты</a></li>
+                    <li><a href="review.html">Отзывы</a></li>
+                    <li><a href="record.html">Записаться</a></li>
+                </ul>
+                <h2>+375 25 765 07 07</h2>
+            </div>
+        </div>
+    </header>
+
+    <section class="record-page">
+        <div class="record-form">
+            <form action="" id="myform">
+                <h1>ЗАПИСАТЬСЯ</h1> 
+                <h2>Имя</h2>
+                <input type="text" id="nameInput" required>   
+                <h2>Телефон</h2>
+                <input type="text" id="phoneInput" required> 
+                <h2>Почта</h2>
+                <input type="email" id="mailInput" required>        
+
+                <button type="submit" class="record-btn">Записаться</button>
+            </form>
+            <script>
+                const form = document.getElementById("myform");
+                form.addEventListener("submit", sendExp);
+            </script>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-content-left">
+                <a href="main.html"><h1 class="Footer_h1">sosa ac<sub>4</sub>d3my</h1></a>
+                <p>При поддержке Международной ассоциации преподавателей вокала</p>
+            </div>
+            <div class="footer-content-right">
+                <ul>
+                    <li><a href="courses.html">Курсы</a></li>
+                    <li><a href="contact.html">Контакты</a></li>
+                    <li><a href="review.html">Отзывы</a></li>
+                    <li><a href="record.html">Записаться</a></li>  
+                </ul>
+            </div>
+        </div>
+        <hr style="width: 90%; background-color: lightgray;">
+    </footer>
+</body>
+</html>

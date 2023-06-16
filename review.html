@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Отзыв</title>
+    <link rel="stylesheet" href="review.css">
+    <script src="review.js"></script>
+</head>
+<body>
+    <audio autoplay loop="loop" controls style="position: fixed; bottom: 0px; right: 0px; z-index: 10; display: none;">
+        <source src="audio/Platina_-_GoblinFM_(musmore.com).mp3">
+    </audio>
+    <header>
+        <div class="header_content">
+            <a href="main.html"><h1 class="Header_h1">sosa ac<sub>4</sub>d3my</h1></a>          
+            <div class="number_container">
+                <ul class="menu_list">
+                    <li><a href="courses.html">Курсы</a></li>
+                    <li><a href="contact.html">Контакты</a></li>
+                    <li><a href="review.html">Отзывы</a></li>
+                    <li><a href="record.html">Записаться</a></li>
+                </ul>
+                <h2>+375 25 765 07 07</h2>
+            </div>   
+        </div>
+    </header>
+
+    <section class="reviewpage">
+        <form action="" id="reviewform" class="reviewform">
+            <h1>Оставь отзыв</h1> 
+            <h2>Имя:</h2>
+            <input type="text" id="namereview" class="namereview" required>   
+            <h2>Сообщение:</h2>       
+            <textarea name="messagereview" id="messagereview" cols="30" rows="10" style="width: 900px;" required></textarea>
+            <br>
+            <br>
+            <button type="submit" class="review-btn">Отправить</button>
+        </form>
+    </section>
+
+    <hr style="background-color: black; width: 90%; height: 5px; margin-top: 100px; margin-bottom: 0px;">
+    
+    <section id="reviewOutPut" style="display: flex; justify-content: center; flex-direction: column; align-items: center;">
+
+    </section>
+
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-content-left">
+                <a href="main.html"><h1 class="Footer_h1">sosa ac<sub>4</sub>d3my</h1></a>
+                <p>При поддержке Международной ассоциации преподавателей вокала</p>
+            </div>
+            <div class="footer-content-right">
+                <ul>
+                    <li><a href="courses.html">Курсы</a></li>
+                    <li><a href="contact.html">Контакты</a></li>
+                    <li><a href="review.html">Отзывы</a></li>
+                    <li><a href="record.html">Записаться</a></li>  
+                </ul>
+            </div>
+        </div>
+        <hr style="width: 90%; background-color: lightgray;">
+    </footer>
+
+</body>
+</html>
